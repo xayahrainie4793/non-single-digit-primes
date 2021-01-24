@@ -10,9 +10,9 @@ Definition in these problems:
 
 Minimal primes: Primes for which there is no shorter sub-sequence with length >=2 of the digits that form a prime.
 
-Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until become a single-digit number (numbers with leading zeros are consider as nonprimes).
+Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until becoming a single-digit number (numbers with leading zeros are consider as nonprimes).
 
-RIght-truncatable primes: Primes that remain prime when the least significant digit is successively removed until become a single-digit number.
+RIght-truncatable primes: Primes that remain prime when the least significant digit is successively removed until becoming a single-digit number.
 
 References:
 
