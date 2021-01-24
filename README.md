@@ -10,7 +10,7 @@ Definition in these problems:
 
 Minimal primes: Primes for which there is no shorter sub-sequence with length >=2 of the digits that form a prime.
 
-Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until becoming a single-digit number (numbers with leading zeros are consider as nonprimes, or there will be infinitely many such primes, such as 10^60+7 in base 10).
+Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until becoming a single-digit number (numbers with leading zeros are consider as nonprimes, to avoid trivial examples, such as 10^60+7 in base 10).
 
 RIght-truncatable primes: Primes that remain prime when the least significant digit is successively removed until becoming a single-digit number.
 
