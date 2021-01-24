@@ -6,6 +6,14 @@ Minimal primes > base, but single-digit prime (and the prime "10", i.e. the prim
 
 Left/Right-truncatable primes >= base, but the single-digit suffix/prefix (i.e. the leftmost digit of right-truncatable primes, or the rightmost digit of left-truncatable primes) need not to be prime.
 
+Definition in these problems:
+
+Minimal primes: Primes for which there is no shorter sub-sequence with length >=2 of the digits that form a prime.
+
+Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until become a single-digit number (numbers with leading zeros are consider as nonprimes).
+
+RIght-truncatable primes: Primes that remain prime when the least significant digit is successively removed until become a single-digit number.
+
 References:
 
 Minimal primes:
