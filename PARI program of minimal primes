@@ -1,0 +1,13 @@
+a(n,k,b)=v=[];for(r=1,length(digits(n,b)),if(r+length(digits(k,2))-length(digits(n,b))>0 && digits(k,2)[r+length(digits(k,2))-length(digits(n,b))]==1,v=concat(v,digits(n,b)[r])));fromdigits(v,b)
+
+is(n,b)=for(k=1,2^length(digits(n,b))-2,if(ispseudoprime(a(n,k,b)) && a(n,k,b)>b,return(0)));1
+
+iss(n,b)=for(k=1,2^length(digits(n,b))-1,if(ispseudoprime(a(n,k,b)) && a(n,k,b)>b,return(0)));1
+
+M(b)=my(v=[]);forprime(p=b+1,b^3,if(is(p,b),v=concat(v,[digits(p,b)])));v
+
+L(b,x,z)=my(yy=[]);for(y=0,b-1,if(iss(x*b^2+y*b+z,b),yy=concat(yy,y)));yy
+
+LL(b)=my(v=[]);for(x=1,b-1,for(z=1,b-1,if(gcd(z,b)==1,v=concat(v,[[x,L(b,x,z),z]]))));v
+
+f(b)=my(v=[],w=LL(b));for(k=1,length(w),for(r=1,length(w[k][2]),v=concat(v,[[w[k][1],w[k][2][r],w[k][2],w[k][3]]])));v
