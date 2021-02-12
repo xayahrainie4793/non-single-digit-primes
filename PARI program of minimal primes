@@ -10,4 +10,4 @@ L(b,x,z)=my(yy=[]);for(y=0,b-1,if(iss(x*b^2+y*b+z,b),yy=concat(yy,y)));yy
 
 LL(b)=my(v=[]);for(x=1,b-1,for(z=1,b-1,if(gcd(z,b)==1,v=concat(v,[[x,L(b,x,z),z]]))));v
 
-f(b)=my(v=[],w=LL(b));for(k=1,length(w),for(r=1,length(w[k][2]),v=concat(v,[[w[k][1],w[k][2][r],w[k][2],w[k][3]]])));v
+f(b)=for(j=2,50,my(u=M(b),v=[],w=LL(b));for(k=1,length(w),if(length(w[k][j]>1) && gcd(w[k])==1 && is(fromdigits(,b),b),,for(r=1,length(w[k][j]),v=concat(v,[[w[k][1],w[k][2][r],w[k][2],w[k][3]]])));w=
