@@ -14,7 +14,13 @@ Minimal primes: Primes for which there is no shorter sub-sequence with length >=
 
 Left-truncatable primes: Primes that remain prime when the leading digit is successively removed until becoming a single-digit number (numbers with leading zeros are consider as nonprimes, to avoid trivial examples, such as 10^60+7 in base 10).
 
-RIght-truncatable primes: Primes that remain prime when the least significant digit is successively removed until becoming a single-digit number.
+Right-truncatable primes: Primes that remain prime when the least significant digit is successively removed until becoming a single-digit number.
+
+File "smallest generalized near-repdigit prime.txt": Smallest (probable) prime of the form x{y} or {x}y for given (x,y) digits pair in given base b, skip the x{y} or {x}y forms with NUMERICAL covering set, 0 if either x{y} or {x}y has all or partial ALGEBRAIC covering set or there are no primes of the form x{y} or {x}y with length <=5000 in base b (such primes are always minimal primes (start with b+1), if the repeating digit (i.e. y for x{y}, x for {x}y) is not 1)
+
+File "smallest prime of the form x000000y.txt": Smallest (probable) prime of the form x{0}y for given (x,y) digits pair in given base b, skip the x{0}y forms with NUMERICAL covering set, 0 if either x{0}y has all or partial ALGEBRAIC covering set or there are no primes of the form x{0}y with length <=5000 in base b (such primes are always minimal primes (start with b+1))
+
+File "x0000yz and xy0000z": Smallest (probable) prime of the form x{0}yz or xy{0}z for given (x,y) digits pair in given base b when (for x{0}yz: x{0}y and x{0}z; for xy{0}z, x{0}z and y{0}z) both can be ruled out as only contain composite numbers by NUMERICAL covering set, skip the x{0}yz or xy{0}z forms with NUMERICAL covering set, 0 if either x{0}yz or xy{0}z has all or partial ALGEBRAIC covering set or there are no primes of the form x{0}yz or xy{0}z with length <=5000 in base b (such primes are always minimal primes (start with b+1), if (yz for x{0}yz, xy for xy{0}z) is not prime)
 
 References:
 
