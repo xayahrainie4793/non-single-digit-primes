@@ -26,7 +26,7 @@ References:
 
 Minimal primes:
 
-https://docs.google.com/document/d/e/2PACX-1vQct6Hx-IkJd5-iIuDuOKkKdw2teGmmHW-P75MPaxqBXB37u0odFBml5rx0PoLa0odTyuW67N_vn96J/pub
+https://sites.google.com/view/minimal--primes
 
 https://mersenneforum.org/attachment.php?attachmentid=24177&d=1610562701
 
